@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    </style>
+    </head>
+    <body>
+      <h1><center>Data Users</center></h1><br><br>
+    <center>
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Kota</th>
+        <th>Province</th>
+        <th>Gubernur</th>
+      </tr>
+      <%JSON.stringify(data)%>
+      <!-- <% var i=1 %> -->
+      <!-- <% data.forEach(d=>{ %> -->
+      <!-- <tr>
+        <td><%= i++ %></td>
+        <td><%= d.Kota%></td>
+        <td><%= d.Province%></td>
+        <td><%= d.Gubernur%></td>
+      </tr>
+      <%})%> -->
+    </table>
+    <h1>CITIES INFO</h1><br><br>
+    <form action="/" method = "POST">
+      Id:<br>
+      <input type="text" name="id">
+      <br>
+      Kota:<br>
+      <input type="text" name="kota">
+      <br>
+      Province:<br>
+      <input type="text" name="province">
+      <br>
+      Gubernur:<br>
+      <input type="text" name="gubernur">
+      <br><br>
+      <!-- <input type="submit" name = "button" value="Submit"> -->
+      <button type="submit" name="button">button</button>
+    </form>
+  </body>
+</html>
